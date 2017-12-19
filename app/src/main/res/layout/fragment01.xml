@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+      <include
+          layout="@layout/linear_layout"
+          />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <GridView
+        android:numColumns="5"
+        android:id="@+id/gv_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </GridView>
+    <GridView
+        android:numColumns="2"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </GridView>
+
+</LinearLayout>
